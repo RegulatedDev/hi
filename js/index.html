@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="thing.css">
+  <title>Terry's Age Calculator</title>
+</head>
+<body class="terry-body">
+  <main class="terry-card">
+    <header class="terry-input-container">
+      <div class="terry-field">
+        <label for="day">DAY</label>
+        <input type="number" id="day" class="terry-input" placeholder="DD" min="1" max="31">
+      </div>
+      <div class="terry-field">
+        <label for="month">MONTH</label>
+        <input type="number" id="month" class="terry-input" placeholder="MM" min="1" max="12">
+      </div>
+      <div class="terry-field">
+        <label for="year">YEAR</label>
+        <input type="number" id="year" class="terry-input" placeholder="YYYY" min="1900">
+      </div>
+    </header>
+    <div class="terry-divider-wrap">
+      <div class="terry-line"></div>
+      <button class="terry-submit-btn" aria-label="Calculate Age">
+        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+      </button>
+    </div>
+    <section class="terry-results">
+      <div class="terry-result-item"><h1><span class="terry-yr">__</span> years</h1></div>
+      <div class="terry-result-item"><h1><span class="terry-mn">__</span> months</h1></div>
+      <div class="terry-result-item"><h1><span class="terry-dy">__</span> days</h1></div>
+    </section>
+  </main>
+
+  <footer class="terry-attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <strong>Terry</strong>.
+  </footer>
+  <script src="ballin.js"></script>
+</body>
+</html>

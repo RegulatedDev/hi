@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;1,800&display=swap');
+
+:root {
+    --terry-purple: hsl(259, 100%, 65%);
+    --terry-error: hsl(0, 100%, 67%);
+    --terry-white: hsl(0, 0%, 100%);
+    --terry-bg: hsl(0, 0%, 94%);
+    --terry-line-color: hsl(0, 0%, 86%);
+    --terry-label-color: hsl(0, 1%, 44%);
+    --terry-text-black: hsl(0, 0%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.terry-body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--terry-bg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.terry-card {
+    background-color: var(--terry-white);
+    padding: 3rem;
+    border-radius: 20px 20px 150px 20px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.terry-input-container {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.terry-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.terry-field label {
+    color: var(--terry-label-color);
+    font-size: 0.75rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.terry-input {
+    width: 120px;
+    padding: 0.8rem 1rem;
+    font-size: 1.5rem;
+    font-family: inherit;
+    font-weight: 800;
+    border: 1px solid var(--terry-line-color);
+    border-radius: 8px;
+    outline: none;
+}
+
+.terry-input:focus {
+    border-color: var(--terry-purple);
+}
+
+.terry-divider-wrap {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 2.5rem 0;
+}
+
+.terry-line {
+    height: 1px;
+    background-color: var(--terry-line-color);
+    flex-grow: 1;
+}
+
+.terry-submit-btn {
+    background-color: var(--terry-purple);
+    border: none;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.terry-submit-btn:hover {
+    background-color: var(--terry-text-black);
+    transition:cubic-bezier(0.215, 0.610, 0.355, 1) 0.2s;
+}
+
+.terry-submit-btn svg {
+    width: 32px;
+}
+
+.terry-results h1 {
+    font-size: 4.5rem;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--terry-text-black);
+}
+
+.terry-num {
+    color: var(--terry-purple);
+}
+
+.terry-attribution { 
+    margin-top: 2rem;
+    font-size: 11px; 
+    text-align: center; 
+}
+@media (max-width: 600px) {
+    .terry-card {
+        padding: 3rem 1.5rem;
+        border-radius: 20px 20px 100px 20px;
+    }
+    
+    .terry-input {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+
+    .terry-divider-wrap {
+        justify-content: center;
+    }
+
+    .terry-submit-btn {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+    }
+
+    .terry-results h1 {
+        font-size: 3.2rem;
+    }
+}
